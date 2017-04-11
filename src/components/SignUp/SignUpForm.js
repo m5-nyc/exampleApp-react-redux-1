@@ -1,4 +1,5 @@
 import React, {  Component } from 'react'
+import axios from 'axios'
 import {
   Form,
   FormGroup,
@@ -25,7 +26,7 @@ class SignUpForm extends Component {
   }
   onSubmit(e){
     e.preventDefault();
-    console.log(this.state);
+    axios.post('./api/users', {user: this.state });
   }
 
 
@@ -76,6 +77,15 @@ class SignUpForm extends Component {
                   onChange={this.onChange}
                   />
             </Col>
+            </FormGroup>
+
+            <FormGroup controlId="formControlsSelectMultiple">
+            <ControlLabel>Gender</ControlLabel>
+            <FormControl componentClass="select" multiple>
+                <option value="select">male</option>
+                <option value="other">female</option>
+                <option value="other">tran</option>
+            </FormControl>
             </FormGroup>
 
             <FormGroup>
