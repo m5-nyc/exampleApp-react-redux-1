@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Home from '../Home'
 import SignIn from '../SignIn'
+import SignUp from '../SignUp'
 import {
   Navbar,
   Nav,
@@ -26,13 +27,15 @@ class Header extends Component {
               </Navbar.Header>
               <Navbar.Collapse>
                 <Nav pullRight>
-                  <NavItem><Link to="signin">Sign Up/Sign In</Link></NavItem>
+                  <NavItem><Link to="signin">Sign In</Link></NavItem>
+                  <NavItem><Link to="signup">Sign Up</Link></NavItem>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
           
           <Route exact path="/" component={Home}/>
           <Route path="/signin" component={SignIn}/>
+          <Route path="/signup" component={SignUp}/>
           </div>
 
 
