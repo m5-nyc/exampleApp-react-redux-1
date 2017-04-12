@@ -1,7 +1,7 @@
 import React, {  Component } from 'react'
 import SignInForm from './SignInForm'
 
-class SignIn extends Component {
+class SignInPage extends Component {
   render() {
     return (
         <SignInForm />
@@ -9,4 +9,4 @@ class SignIn extends Component {
   }
 }
 
-export default SignIn;
+export default SignInPage;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Home from '../Home'
-import SignIn from '../SignIn'
-import SignUp from '../SignUp'
+import SignInPage from '../SignInPage'
+import SignUpPage from '../SignUpPage'
 import {
   Navbar,
   Nav,
@@ -34,8 +34,8 @@ class Header extends Component {
             </Navbar>
           
           <Route exact path="/" component={Home}/>
-          <Route path="/signin" component={SignIn}/>
-          <Route path="/signup" component={SignUp}/>
+          <Route path="/signin" component={SignInPage}/>
+          <Route path="/signup" component={SignUpPage}/>
           </div>
 
 

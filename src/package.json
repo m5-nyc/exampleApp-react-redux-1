@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.4",
+    "shortid": "^2.2.8",
+    "validator": "^7.0.0"
+  }
+}
